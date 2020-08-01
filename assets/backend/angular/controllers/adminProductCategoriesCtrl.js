@@ -20,8 +20,8 @@ app.controller('adminProductCategoriesCtrl', [
             .renderWith(function(data, type, full, meta) { 
                 let privilege = {
                     read: ($scope.privileges.read == 1) ? `<button ng-click="getProductCategory(${data.id})" class="btn btn-xs btn-info" tooltip-placement="top" uib-tooltip="Ver"><i class="fa fa-eye"></i></button>` : '',
-                    update: ($scope.privileges.update == 1) ? `<a href="#!/product-categories/${data.id}/edit/" class="btn btn-xs btn-warning" tooltip-placement="top" uib-tooltip="Editar"><i class="fa fa-pencil"></i></a>`:'',
-                    delete: ($scope.privileges.delete == 1) ? `<button ng-click="deleteProductCategory(${data.id})" class="btn btn-xs btn-danger" tooltip-placement="top" uib-tooltip="Eliminar"><i class="fa fa-close"></i></button>`:''
+                    update: ($scope.privileges.update == 1) ? `<a href="#!/product-categories/${data.id}/edit/" class="btn btn-xs btn-warning" tooltip-placement="top" uib-tooltip="Editar"><i class="fa fa-pencil"></i></a>`:''
+                    // delete: ($scope.privileges.delete == 1) ? `<button ng-click="deleteProductCategory(${data.id})" class="btn btn-xs btn-danger" tooltip-placement="top" uib-tooltip="Eliminar"><i class="fa fa-close"></i></button>`:''
                 }
                 return `${privilege.read} ${privilege.update} ${privilege.delete}`;
             })
