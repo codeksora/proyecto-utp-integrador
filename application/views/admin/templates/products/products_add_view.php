@@ -84,7 +84,7 @@
               </div>
 
               <div class="form-group col-md-4">
-                <label for="">Ficha técnica</label>
+                <label for="">Ficha técnica (sólo PDF)</label>
                 <input type="file" class="form-control" ngf-select ng-model="product.information" ngf-accept="'application/pdf'">
               </div>
             </div>
@@ -139,24 +139,24 @@
                   <div class="col-md-12"><hr></div>
                   <div class="form-group col-md-3">
                       <label>Cant. SAN base</label>
-                      <input class="form-control" type="number" ng-model="product.san_base" required>
+                      <input class="form-control" type="number" ng-model="product.san_base" min="1" max="99999" step=".01"  required>
                   </div>
 
                   <div class="form-group col-md-3">
                       <label>Cant. SAN máx.</label>
-                      <input class="form-control" type="number" ng-model="product.san_max" required>
+                      <input class="form-control" type="number" ng-model="product.san_max" min="1" max="99999" step=".01"  required>
                   </div>
                
                <div class="col-md-12">
                 <div class="row">
                   <div class="form-group col-md-3">
                       <label>Precio dólares SAN (1 año)</label>
-                      <input class="form-control" type="number" ng-model="product.price_1_san" required>
+                      <input class="form-control" type="number" ng-model="product.price_1_san" min="1" max="99999" step=".01"  required>
                   </div>
 
                   <div class="form-group col-md-3" ng-if="product.quantity_year_id == 3 || product.quantity_year_id == 4">
                       <label>Precio dólares SAN (2 años)</label>
-                      <input class="form-control" type="number" ng-model="product.price_2_san" required>
+                      <input class="form-control" type="number" ng-model="product.price_2_san" min="1" max="99999" step=".01"  required>
                   </div>
                  
                  </div>
@@ -164,12 +164,12 @@
                  <div class="row">
                    <div class="form-group col-md-3">
                         <label>Precio soles SAN (1 año)</label>
-                        <input class="form-control" type="number" ng-model="product.price_pen_1_san" required>
+                        <input class="form-control" type="number" ng-model="product.price_pen_1_san" min="1" max="99999" step=".01"  required>
                     </div>
 
                     <div class="form-group col-md-3" ng-if="product.quantity_year_id == 3 || product.quantity_year_id == 4">
                         <label>Precio soles SAN (2 años)</label>
-                        <input class="form-control" type="number" ng-model="product.price_pen_2_san" required>
+                        <input class="form-control" type="number" ng-model="product.price_pen_2_san" min="1" max="99999" step=".01"  required>
                     </div>
                  </div>
                </div>
