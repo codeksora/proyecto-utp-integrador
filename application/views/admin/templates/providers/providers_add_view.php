@@ -32,7 +32,7 @@
 
               <div class="form-group col-md-4">
                   <label>Teléfono (opcional)</label>
-                  <input class="form-control" type="text" ng-model="provider.phone">
+                  <input class="form-control" type="number" min="5" ng-model="provider.phone">
               </div>
 
               <div class="form-group col-md-4">

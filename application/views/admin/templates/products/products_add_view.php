@@ -70,7 +70,7 @@
 
             <div class="row">
               <div class="form-group col-md-4">
-                <label for="">¿Contiene SAN? *</label>
+                <label for="">¿Contiene SAN? (opcional)</label>
                 <select class="form-control" ng-model="product.is_san" ng-disabled="product.quantity_year_id == 1 || !product.quantity_year_id">
                   <option value="">Seleccionar</option>
                   <option value="1">Si</option>
@@ -93,44 +93,44 @@
              <div class="row">
                 <div class="form-group col-md-4" ng-if="product.quantity_year_id == 1">
                     <label>Precio dólares</label>
-                    <input class="form-control" type="number" ng-model="product.price_1" min="1" required>
+                    <input class="form-control" type="number" ng-model="product.price_1" min="1" max="99999" step=".01" max="99999" step=".01" required>
                 </div>
 
                 <div class="form-group col-md-4" ng-if="product.quantity_year_id == 2 || product.quantity_year_id == 3 || product.quantity_year_id == 4">
                     <label>Precio dólares (1 año)</label>
-                    <input class="form-control" type="number" ng-model="product.price_1_year" min="1" required>
+                    <input class="form-control" type="number" ng-model="product.price_1_year" min="1" max="99999" step=".01" required>
                 </div>
 
                 <div class="form-group col-md-4" ng-if="product.quantity_year_id == 3 || product.quantity_year_id == 4">
                     <label>Precio dólares (2 años)</label>
-                    <input class="form-control" type="number" ng-model="product.price_2_year"  min="1"required>
+                    <input class="form-control" type="number" ng-model="product.price_2_year"  min="1" max="99999" step=".01"required>
                 </div>
 
                 <div class="form-group col-md-4" ng-if="product.quantity_year_id == 4">
                     <label>Precio dólares (3 años)</label>
-                    <input class="form-control" type="number" ng-model="product.price_3_year" min="1" required>
+                    <input class="form-control" type="number" ng-model="product.price_3_year" min="1" max="99999" step=".01" required>
                 </div>
                </div>
             <div class="row">
                <!-- PRECIO EN SOLES -->
                <div class="form-group col-md-4" ng-if="product.quantity_year_id == 1">
                     <label>Precio soles</label>
-                    <input class="form-control" type="number" ng-model="product.price_pen_1" min="1" required>
+                    <input class="form-control" type="number" ng-model="product.price_pen_1" min="1" max="99999" step=".01" required>
                 </div>
                
                <div class="form-group col-md-4" ng-if="product.quantity_year_id == 2 || product.quantity_year_id == 3 || product.quantity_year_id == 4">
                     <label>Precio soles (1 año)</label>
-                    <input class="form-control" type="number" ng-model="product.price_pen_1_year" min="1" required>
+                    <input class="form-control" type="number" ng-model="product.price_pen_1_year" min="1" max="99999" step=".01" required>
                 </div>
                
                <div class="form-group col-md-4" ng-if="product.quantity_year_id == 3 || product.quantity_year_id == 4">
                     <label>Precio soles (2 años)</label>
-                    <input class="form-control" type="number" ng-model="product.price_pen_2_year" min="1" required>
+                    <input class="form-control" type="number" ng-model="product.price_pen_2_year" min="1" max="99999" step=".01" required>
                 </div>
                
                <div class="form-group col-md-4" ng-if="product.quantity_year_id == 4">
                     <label>Precio soles (3 años)</label>
-                    <input class="form-control" type="number" ng-model="product.price_pen_3_year" min="1" required>
+                    <input class="form-control" type="number" ng-model="product.price_pen_3_year" min="1" max="99999" step=".01" required>
                 </div>
             </div>
 

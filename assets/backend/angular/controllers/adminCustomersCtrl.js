@@ -42,7 +42,7 @@ app.controller('adminCustomersCtrl', [
         })
         // .withOption('order', [[0, 'desc']])
         .withOption('processing', true)
-        .withOption('responsive', true)
+        // .withOption('responsive', true)
         .withOption('serverSide', true)
         .withDataProp('data')
         .withBootstrap()

@@ -35,7 +35,7 @@
                 <div class="form-group col-md-2 required">
                       <label>Número de documento</label>
                       <div class="input-group input-group-md">
-                          <input type="text" class="form-control" ng-model="customer.document_number" required>
+                          <input type="text" class="form-control" ng-model="customer.document_number" pattern="[0-9]{8,12}" required>
                           <span class="input-group-btn" ng-if="customer.document_type_id == 1">
                               <button type="button" class="btn btn-info btn-flat" ng-if="isDisabledSearch" ng-click="searchOnSunat(customer.document_number)"><i class="fa fa-search"></i></button>
                               <button type="button" class="btn btn-info btn-flat" ng-if="!isDisabledSearch" disabled><i class="fa fa-pulse fa-spinner"></i></button>
@@ -129,7 +129,7 @@
 
                 <div class="form-group col-md-4 required">
                     <label>Ciudad</label>
-                    <input class="form-control" type="text" ng-model="customer.city" required>
+                    <input class="form-control" type="text" ng-model="customer.city" pattern="[a-zA-Z]{3}" required>
                 </div>
             </div>
           </div>

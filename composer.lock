@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f8a953934ef2a24f62788a430c74f9a",
+    "content-hash": "8e168d4d1da60a36fa3660722a1d483d",
     "packages": [
         {
             "name": "dompdf/dompdf",
@@ -71,6 +71,58 @@
             "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
             "homepage": "https://github.com/dompdf/dompdf",
             "time": "2020-02-20T03:52:51+00:00"
+        },
+        {
+            "name": "jossmp/sunatphp",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JossMP/sunatphp.git",
+                "reference": "69141d9775c10e13cd430949e7117bfd6a4493db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JossMP/sunatphp/zipball/69141d9775c10e13cd430949e7117bfd6a4493db",
+                "reference": "69141d9775c10e13cd430949e7117bfd6a4493db",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "lib-curl": "*"
+            },
+            "require-dev": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sunat\\": "src/",
+                    "cURL\\": "src/",
+                    "response\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josue Mazco Puma",
+                    "email": "jossmp@gmail.com",
+                    "homepage": "https://geekdev.ml/",
+                    "role": "Developers"
+                }
+            ],
+            "description": "Clase para realizar consultas a sunat Peru mediante el numero de ruc o dni",
+            "homepage": "https://github.com/JossMP/SunatPHP",
+            "keywords": [
+                "consulta",
+                "curl",
+                "peru",
+                "php",
+                "sunat"
+            ],
+            "time": "2019-03-14T03:15:00+00:00"
         },
         {
             "name": "phenx/php-font-lib",
