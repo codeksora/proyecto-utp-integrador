@@ -1,7 +1,7 @@
 {
     "require": {
         "pusher/pusher-php-server": "^4.1",
-        "dompdf/dompdf": "^0.8.5",
+        "dompdf/dompdf": "^2.0.1",
         "jossmp/sunatphp": "^3.0"
     }
 }
